@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IdolMart</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Merriweather', serif;
+      background-image: url('about.png');
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background-color: no color(srgb red green blue);
+      color: Black;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 25px;
+    }
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background: #0b3d91;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .logo {
+      font-size: 35px;
+      font-weight: bold;
+      color: #ff69b4;
+      display:flex;
+      justify-content:space-between;
+      align-items: center;
+      padding: 10 0px;
+    }
+      .logo img { 
+	width: 70px; 
+	height: auto; 
+	margin-right: 10px; 
+    } 
+      .logo span { 
+	font-size: 35px;
+ 	color: #ff69b4;
+    }
+    .checkbtn {
+      font-size: 30px;
+      color: #ff69b4;
+      cursor: pointer;
+      display: block;
+    }
+    #check {
+      display: none;
+    }
+    nav ul {
+      position: fixed;
+      width: 100%;
+      top: 80px;
+      left: -100%;
+      background: #0b3d91;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      margin: 10px;
+    }
+    nav ul li a {
+      color: #ff69b4;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+    nav ul li a:hover {
+      background: #ff69b4;
+      color: #333;
+    }
+    #check:checked ~ ul {
+      left: 0;
+      flex-direction: row;
+    }
+    
+    p.learn-about-us { font-size: 35px; text-align: center;
+    }
+    .center-table { display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 10px;
+     } 
+    p.learn-about-us { font-size: 35px; 
+      text-align: center;
+      margin-top: 20px;
+    }
+     table { 
+        border-collapse: collapse; 
+    } 
+    
+
+    footer {
+      background-color: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    @media (min-width: 600px) {
+      nav ul {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      .checkbtn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <div class="logo">
+	<img src="pink logo.png" alt="IdolMart Logo">
+	<span> IdolMart</span>
+    </div>
+
+    <ul>
+      <li><a class="active" href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Merch.html">Merchandise</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Others.html">Others</a></li>
+    </ul>
+  </nav>
+
+  <p class="learn-about-us">Learn About Us</p>
+  <div class="center-table">
+  
+  <table>
+<tr> 
+      <td><img src="idolmart logo.png" alt="logo"> </td>
+      <td> <b style= "font-size: 25px;"> IdolMart </b> 
+       <p style="font-size: 20px;">
+        is an online platform especially made for passionate K-pop fans to explore and buy a wide variety of official and fan-adored merchandise from their much loved idols and groups. 
+        There are many items available like limited edition albums, posters, light sticks along with special clothes, accessories, collectibles on Idol Mart . Idol Mart gives a broad selection of products that attend the ever-increasing community of K-pop. 
+        The aim behind it is making shopping interesting for fans while ensuring they can find easily high-quality goods related to their beloved idol or group. 
+    </p></td>
+    </tr>
+ </table>
+  </div>
+  <footer>
+    <p>© 2024 IdolMart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
